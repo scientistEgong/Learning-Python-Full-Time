@@ -22,5 +22,7 @@ Clone this repository:
 git clone https://github.com/scientistEgong/Learning-Python-Full-Time/
 cd Learning-Python-Full-Time
 
----
-Create a virtual environment.
+Create a virtual environment (Optional)
+python -m venv .venv
+source .venv/bin/activate   # On Windows: .venv\Scripts\activate
+
