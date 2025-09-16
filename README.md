@@ -14,7 +14,12 @@ This repository is my full documentation of learning python — from the basics 
 ## 📂 **Repository Structure**
 under modification
 
+---
 
-yaml
-## 🛠 **Setup**
+## 🛠️ Setup
+Clone this repository:
+```bash
+git clone https://github.com/<your-username>/Learning-Python-Full-Time.git
+cd Learning-Python-Full-Time
+
 
