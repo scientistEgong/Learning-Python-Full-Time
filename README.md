@@ -1,6 +1,6 @@
 ## 🐍🐍 **Learning-Python-Full-Time**
 
-This repository id my full documentation of learning python — from the basics to advanced concepts. It is a resource reinforced with syntax notes, examples, and real-world projects. These serves as a personal learning jounal and research resource for anyone walking the same path.
+This repository is my full documentation of learning python — from the basics to advanced concepts. It is a resource reinforced with syntax notes, examples, and real-world projects. These serves as a personal learning jounal and research resource for anyone walking the same path.
 
 
 
@@ -17,5 +17,6 @@ under modification
 
 ## 🛠 **Setup**
 Clone the repository:
-git clone 
+'''bash
+git clone https://github.com/scientistEgong/Learning-Python-Full-Time.git '''
 
