@@ -1,0 +1,33 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Jupyter 
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+
+# IDE / Editor stuff
+.vscode/
+.idea/
+*.swp
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+
+# Logs / dumps
+*.Logs
+*.out
+*.tmp
+
+# OS-SPECIFIC
+.DS_Store
+Thumbs.db
