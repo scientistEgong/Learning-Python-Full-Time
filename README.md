@@ -19,7 +19,7 @@ under modification
 ## 🛠️ Setup
 Clone this repository:
 ```bash
-git clone https://github.com/<your-username>/Learning-Python-Full-Time.git
+git clone https://github.com/scientistEgong/Learning-Python-Full-Time/
 cd Learning-Python-Full-Time
 
 
