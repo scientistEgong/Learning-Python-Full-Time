@@ -15,8 +15,6 @@ This repository is my full documentation of learning python — from the basics 
 under modification
 
 
+yaml
 ## 🛠 **Setup**
-Clone the repository:
-'''bash
-git clone https://github.com/scientistEgong/Learning-Python-Full-Time.git '''
 
