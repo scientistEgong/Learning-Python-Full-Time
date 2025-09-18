@@ -29,3 +29,25 @@ python -m venv .venv
 source .venv/bin/activate   # On Windows: .venv\Scripts\activate
 ```
 
+# Install Dependencies (If needed)
+```bash
+pip install -r requirement.txt
+```
+
+📖💻 # USAGE
+1. Navigate to a topic folder (e.g Basics/string)
+2. Read the README.md inside for syntax and notes.
+3. Explore the .py or .ipynb files for examples.
+4. Check the projects/folders for read- world exercises.
+
+
+🧭🚩 # ROADMAP
+- [] Basics (data types, strings, loops, functions)
+- [] Intermediate (OOP, error handling, modules, testing)
+- [] Advance (Decorators, generators, async, metaprogramming)
+- [] Real world projects
+
+
+📚📚  # REFERENCES
+-   Python Documentation
+    
