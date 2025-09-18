@@ -60,5 +60,5 @@ pip install -r requirement.txt
 
 
 ## 📚📚  REFERENCES
--   Python Documentation
+-   Python Documentation- https://docs.python.org/3/
     
