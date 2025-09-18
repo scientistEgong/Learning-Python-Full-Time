@@ -15,7 +15,19 @@ This repository is my full documentation of learning python — from the basics 
 
 
 ## 📂 **Repository Structure**
-under modification
+Learning-Python-Full-Time/
+├── basics/ # Core foundations (strings, loops, functions, etc.)
+│ └── <topic>/
+│ ├── README.md # Notes and syntax reference
+│ ├── basics.py # Simple examples and exercises
+│ └── projects/ # Real-world mini projects
+├── intermediate/ # OOP, modules, error handling, testing
+├── advanced/ # Decorators, async, metaprogramming
+├── projects/ # Larger standalone projects
+├── notebooks/ # Jupyter notebooks for experiments
+├── tests/ # Unit tests with pytest
+├── docs/ # Roadmap, learning journal, extra notes
+└── README.md 
 
 ---
 
@@ -63,5 +75,8 @@ pip install -r requirement.txt
 
 
 ## 📚📚  REFERENCES
--   Python Documentation- https://docs.python.org/3/
+- Python Documentation- https://docs.python.org/3/
     
+## ⚖ License
+This project is licensed under the MIT License — see LICENSE
+ for details.
