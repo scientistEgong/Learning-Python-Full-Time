@@ -13,7 +13,7 @@
       The (""" """) triple quotes is used for docs strings as well as documentations.
 
 **4. Variables**
-      Python is dynamically typed and does not need to be declared explicitely.
+      Python is dynamically typed and does not need to be declared explicitly.
 
 
 **5. String Quotation**
@@ -21,5 +21,5 @@
 
 
 **Indentation Guide**
-    Use tabs and spaces for indentation
+    Use either tabs or spaces consistently for indentation (PEP 8 recommends 4 spaces per indentation level; do not mix tabs and spaces)
     for more details, refer to https://docs.python.org/
