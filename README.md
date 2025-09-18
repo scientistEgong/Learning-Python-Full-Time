@@ -38,7 +38,7 @@ pip install -r requirement.txt
 
 
 
-##📖💻 USAGE
+## 📖💻 USAGE
 1. Navigate to a topic folder (e.g Basics/string)
 2. Read the README.md inside for syntax and notes.
 3. Explore the .py or .ipynb files for examples.
@@ -48,7 +48,7 @@ pip install -r requirement.txt
 
 
 
-##🧭🚩  ROADMAP
+## 🧭🚩  ROADMAP
 - [] Basics (data types, strings, loops, functions)
 - [] Intermediate (OOP, error handling, modules, testing)
 - [] Advance (Decorators, generators, async, metaprogramming)
