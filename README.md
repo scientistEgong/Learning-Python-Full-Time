@@ -1,3 +1,6 @@
+![Lucid_Origin_a_stylized_python_logo_specifically_designed_for__1](https://github.com/user-attachments/assets/bb8f6b74-564f-4c7c-a87e-fec0855aaf08)
+
+
 ## 🐍🐍 **Learning-Python-Full-Time**
 
 This repository is my full documentation of learning python — from the basics to advanced concepts. It is a resource reinforced with syntax notes, examples, and real-world projects. These serves as a personal learning jounal and research resource for anyone walking the same path.
