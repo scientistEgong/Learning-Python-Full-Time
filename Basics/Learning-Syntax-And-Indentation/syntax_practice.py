@@ -49,3 +49,25 @@ print(calculator(a=num1, b=num2))
 first_name = 'Daniel'  # single quotation mark
 second_name = "Daniel"  # Double quoation mark
 print(first_name, second_name)
+
+
+
+# Indentation guide
+# Correct method
+num = 5
+if num > 10:
+     print("{num} > 10")
+
+else:
+     print(f"{num} < 10")  # This block executes because the condition is true.   
+
+
+
+# Wrong indentation use
+num = 5
+if num == 5:
+print(num)     
+
+else:
+print(num)
+# This will results in errors.
