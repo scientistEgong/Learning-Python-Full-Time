@@ -43,7 +43,7 @@ pip install -r requirement.txt
 
 ## 📖💻 USAGE
 1. Navigate to a topic folder (e.g Basics/string)
-2. Read the README.md inside for syntax and notes.
+2. Read the README.md inside for folder roadmapsyntax and notes.
 3. Explore the .py or .ipynb files for examples.
 4. Check the projects/folders for read- world exercises.
 
