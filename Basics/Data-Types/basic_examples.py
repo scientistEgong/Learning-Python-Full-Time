@@ -18,5 +18,7 @@ print("\n{} is fun!".format(program_language.title()))  # Python is fun!
 
 # Reassign a new value to the existing variable and print output.
 occupation = "Fullstack Developer"  # Before
+print(f"Before: {occupation}")
 occupation = "Cybersecurity Engineer"  # After
-print(occupation)
+print(f"After: {occupation}")
+
