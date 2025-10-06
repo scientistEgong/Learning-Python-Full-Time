@@ -15,6 +15,7 @@ This repository is my full documentation of learning python — from the basics 
 
 
 ## 📂 **Repository Structure**
+```bas
 Learning-Python-Full-Time/
 ├── basics/ # Core foundations (strings, loops, functions, etc.)
 │ └── <topic>/
@@ -28,8 +29,8 @@ Learning-Python-Full-Time/
 ├── tests/ # Unit tests with pytest
 ├── docs/ # Roadmap, learning journal, extra notes
 └── README.md 
+```
 
----
 
 ## 🛠️ Setup
 Clone this repository:
