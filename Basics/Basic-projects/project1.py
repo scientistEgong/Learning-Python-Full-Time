@@ -2,13 +2,13 @@
 def project_1():
     '''Display your name in lower, title case, and upper case.'''
     
-    first_name = "scientist"
-    last_name = "egong"
+    first_name = input("Enter your first name: ")
+    last_name = input("Enter your last name: ")
 
-    formated_name = f"{first_name} {last_name}"
-    uppercased_name = formated_name.upper()
-    title_cased_name = formated_name.title()
-    lower_case_name = formated_name.lower()
+    formatted_name = f"{first_name} {last_name}"
+    uppercased_name = formatted_name.upper()
+    title_cased_name = formatted_name.title()
+    lower_case_name = formatted_name.lower()
 
 
     print("These are my names in the following python methods;"
@@ -23,11 +23,11 @@ def project_1():
 def project_2():
     '''concatenate first and last name'''
 
-    first_name = "scientist".title()
-    last_name = "egong".title()
+    first_name = input("Enter your first name: ").title()
+    last_name = input("Enter your last name: ").title()
 
     concatenated_names = first_name + " " + last_name  # Concatenate names
-    print("\n Concatenated names are: ", end="")
+    print("\nConcatenated names are: ", end="")
     print(concatenated_names + "\n")
      
 
@@ -35,8 +35,8 @@ def project_2():
 def project_3():
     '''Use f-string to show device IP and port.'''
 
-    device_ip_address = "187.201.117.173"
-    port_number = "49244"
+    device_ip_address = input("Enter Ip address: ")
+    port_number = input("Enter port number: ")
 
     print(f"Ip address: {device_ip_address}\n"
         f"Device port number: {port_number}\n")
@@ -80,38 +80,45 @@ def project_5():
     word_to_be_replaced = input("Enter the word you want to replace: ").title().strip()
     new_word = input("Enter the new word you want to add to the sentence: ").title().strip()
 
-    modified_sentence = string_input.replace(word_to_be_replaced, new_word)
-    print(f"Before: {string_input}.")
-    print(f"After: {modified_sentence}.\n")
+    if not word_to_be_replaced:
+        print("No word detected, add a word you want to replace.")
+
+    elif word_to_be_replaced not in string_input:
+        print(f"{word_to_be_replaced} not in string input.")    
+
+    else:    
+        modified_sentence = string_input.replace(word_to_be_replaced, new_word)
+        print(f"Before: {string_input}")
+        print(f"After: {modified_sentence}\n")
 
 
 def main():
+        options = {
+            "1": project_1,
+            "2": project_2,
+            "3": project_3,
+            "4": project_4,
+            "5": project_5
+        }
+
         while True:
-            print("Here is a run down of project1\n" 
+            print("Here is a run down of the project\n" 
             "Enter each option to view code outputs.\n" 
             "1. Print your name in different formats (upper, lower, title).\n" 
-            "2. Concatenate first and last variables names.\n"
+            "2. Concatenate first and last name.\n"
             "3. View device Ip and port number.\n"
             "4. Count characters in a given string.\n"
-            "5.Replace a word 'SSH' in the string to 'Telnet' \n")
+            "5. Replace a word in the sentence. \n")
 
-            user_input = input("\nEnter an integer from (1 ~ 10) or type 'exit' to quit: ").strip()
+            user_input = input("\nEnter an integer from (1 ~ 5) or type 'exit' to quit: ").strip()
             
             
             # Exit code
             if user_input.lower() == "exit":
                 print("Thanks for playing with our code.")
                 break
-            elif user_input == "1":
-                project_1()
-            elif user_input == "2":
-                 project_2()  
-            elif user_input == "3":
-                 project_3()
-            elif user_input == "4":
-                 project_4()
-            elif user_input == "5":
-                 project_5()       
+            elif user_input in options:
+                options[user_input]() 
             else:
                 print("Invalid input, try again.")
 
