@@ -63,11 +63,11 @@ else:
 
 
 
-# Wrong indentation use
-num = 5
-if num == 5:
-print(num)     
+# # Wrong indentation use
+# num = 5
+# if num == 5:
+# print(num)     
 
-else:
-print(num)
-# This will results in errors.
+# else:
+# print(num)
+# # This will results in errors.
