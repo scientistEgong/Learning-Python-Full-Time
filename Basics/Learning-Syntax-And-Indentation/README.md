@@ -1,9 +1,9 @@
 **Basic Python Syntax and Indentation**
 
 **1. Basic python syntax**
-   - **Case Sensitivity**
+    **Case Sensitivity**
      Python is case-sensitive, meaning variable names must be consistent.
-   
+
 **2. Statements**
     Each line of code typically represents a statement.
 
