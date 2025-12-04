@@ -1,0 +1,7 @@
+date,period,category,amount,note,,,,,
+11/30/2025 10:05,daily,food,0,,,,,,
+11/30/2025 10:21,daily,data,0,Daily data usage,,,,,
+11/25/2025 0:00,daily,data,1800,Daily data usage,,,,,
+11/25/2025 0:00,daily,food,0,QUIT,,,,,
+11/24/2025 0:00,weekly,food,1200,"Weekly log for Week 48, 2025 (Monday)",,,,,
+24-11-2025,1,100,2400,800,0,0,0,333.33,0

@@ -44,7 +44,7 @@ def calculation_func():
                 print("Multiplication: ", num1 * num2)
             elif calculator_funct_option == "4":
                 
-                # catch all zero division errorss.
+                # catch all zero division errors.
                 try:
                     division_of_numbers = num1 / num2
                 except ZeroDivisionError:
