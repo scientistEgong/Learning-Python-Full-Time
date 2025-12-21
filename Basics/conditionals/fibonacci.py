@@ -18,19 +18,23 @@ def fibonacci_sequence():
     while True:
 
         series_range = input("Enter range of fibonacci sequence to start.\nE.g first 4, 5, 9 series or (q to quit): ")
+
+        # Exit
         if series_range.lower() == "q":
             print("Exiting...")
             break
 
-        
+        # Validate input
         sequence_default_number = input("Enter the first two sequence numbers e.g (0, 1) or (1, 1) seperated by comma: ")
         if any (char for char in sequence_default_number if char in ".;'/=-") or len(sequence_default_number) <= 1:
             print("Numbers must be seperated with commas.\n")
             continue
-
+        
+        # Process input
         cleaned_numbers = sequence_default_number.replace(" ", "").split(",")
         x, y = [num for num in cleaned_numbers]
         
+        # calculate fibonacci series
         try:
             num1 = int(x)
             num2 = int(y)
