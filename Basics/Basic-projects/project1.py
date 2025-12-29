@@ -53,7 +53,7 @@ def project_4():
         print()
         return
 
-    # check for sentences
+    # validate conditions for spaces and puntuation.
     if " " in string_input or any(punc in string_input for punc in "',.!?"):
         sentence_flag = "sentence"
         print(f"There are {count_of_char} characters in the {sentence_flag}, {string_input.title()}.")
@@ -93,6 +93,7 @@ def project_5():
 
 
 def main():
+        """Run main code"""
         options = {
             "1": project_1,
             "2": project_2,

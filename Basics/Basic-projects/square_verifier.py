@@ -9,7 +9,7 @@ def square_displayer():
         if user_input.lower() == "exit":
             break
         
-        # catch all errors.
+        # validate input.
         try:
             number = float(input("Enter a number you want to square or view it's cube: "))
             if user_input == "1":

@@ -32,7 +32,7 @@ def fibonacci_sequence():
         
         # Process input
         cleaned_numbers = sequence_default_number.replace(" ", "").split(",")
-        x, y = [num for num in cleaned_numbers]
+        x, y = cleaned_numbers[0], cleaned_numbers[1]
         
         # calculate fibonacci series
         try:
@@ -78,6 +78,35 @@ def nth_fibonacci_number():
     Logic: How do you calculate just that one number?
     Output: Single Fibonacci number 
     """
+    print("GET Nth FIBONACCI NUMBER.")
+    while True:
+        position = input("Enter the position of the fibonacci number you want to get (q to quit): ")
+
+        # Exit
+        if position.lower() == "q":
+            print("Exiting...")
+            break
+
+        # Validate input and calculate nth fibonacci number
+        try:
+            n = int(position)
+            if n <= 0:
+                print("Position must be a positive integer.\n")
+                continue
+            elif n == 1:
+                print("The 1st Fibonacci number is 0.\n")
+                continue
+            elif n == 2:
+                print("The 2nd Fibonacci number is 1.\n")
+                continue
+            else:
+                a, b = 0, 1
+                for _ in range(2, n):
+                    a, b = b, a + b
+                print(f"The {n}th Fibonacci number is {b}.\n")
+
+        except ValueError:
+            print("Invalid input! Please enter a positive integer.\n")
 
 
 def quit():
