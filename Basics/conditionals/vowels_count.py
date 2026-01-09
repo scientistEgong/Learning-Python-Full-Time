@@ -1,20 +1,20 @@
-# Count all vowels in a string.
+def vowel_count():
+    """Count all vowels in a string."""
+    vow_letters = "aeiou"
 
-while True:
-     a_count = 0
-     vowel_count = 0
-     vowels = "aeiouAEIOU"
-     vowel_input = input("Enter a word or 'q' to quit: ")
-     if vowel_input.lower() == "q":
+    # Get inputs
+    while True:
+     text = input("Enter a word or q to quit: ")
+     if text.lower() == "q":
           print("Exiting...")
           break
 
-     for char in vowel_input:
-          if char in vowels:
-             vowel_count += 1
-     print(vowel_count)
+     # print vowel
+     vowels = sum(1 for char in text.lower() if char in vow_letters)
+     print(f"word: {text}\nVowel count: {vowels}")
 
-     # I need to work on this further.
+
+vowel_count()
 
        
         
