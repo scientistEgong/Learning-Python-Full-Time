@@ -32,9 +32,4 @@ while True:
         replay = input("Enter a response: ")
         if replay.lower() == "n":
             print("Thanks for playing!")
-            s.exit()
-        if replay.lower() == "y":
-            break
-
-        else:
-            print("Invalid input!")
+            
