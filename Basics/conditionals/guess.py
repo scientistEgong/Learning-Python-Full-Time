@@ -4,8 +4,6 @@ import random as rn
 # -- Main Game Loop --
 while True:
     plays = 5
-   
-
 
     while plays > 0:
         number = input("Guess a number between [1 - 100]: ")
