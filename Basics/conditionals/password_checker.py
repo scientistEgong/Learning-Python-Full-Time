@@ -21,32 +21,56 @@ CONCEPTS USED
 # === Main code Loop ===
 run = True
 while run:
-    passwrd_input = input("Insert password: ")
+    password_input = input("Insert password or 'q' to quit: ")
+
+    # Exit code
+    if password_input.lower() == "q":
+        print("Exiting...")
+        break
 
     # Validate password over spaces
-    if " " in passwrd_input:
+    if " " in password_input:
         print("Spaces are not allowed!")
         continue
 
-    password_length = len(passwrd_input)
+    
     #  Validate coditions for password.
-    password_lenth_check = (password_length > 8) 
-    upper_check = any(password.isupper() for password in passwrd_input)
-    digit_check = any(password.isdigit() for password in passwrd_input ) 
-    lower_check = any(password.islower() for password in passwrd_input )
-    special_chr = any(char in "#$%^&*(?!@#$%^&*)+{/.}:><?" for char  in passwrd_input)
+    password_length = len(password_input)
+    password_length_check = (password_length >= 8) 
+    upper_check = any(password.isupper() for password in password_input)
+    digit_check = any(password.isdigit() for password in password_input ) 
+    lower_check = any(password.islower() for password in password_input )
+    special_chr = any(char in "#$%^&*(?!@#$%^&*)+{/.}:><?" for char  in password_input)
+    
+    # strong password condition
+    strong_password_condition = (password_length_check
+                         and (upper_check)
+                         and (digit_check)
+                         and (lower_check)
+                         and (special_chr))
+
+    # Store password reponses
+    pass_word_conditions = {password_length_check: "Password should not be less than 8 characters.",
+                      upper_check: "Password should contain one or more uppercase letter.",
+                      digit_check: "Password should contain one or more digits.",
+                      lower_check: "Password should contain at least one or more lowercase letter.",
+                      special_chr: "Password should contain at least one or more special characters.",
+                      }
+    
+    # Display password options 
+    for condition, message in pass_word_conditions.items():
+        if not condition:
+            print(message)
     
 
-    if not password_lenth_check:
-        print("Password should be at least 8 characters.")
-    elif not upper_check:
-        print("password should contain at least one or more upper case letters.")
-    elif not digit_check:
-         print("password should contain at least one or more digits.")
-    elif not  lower_check:
-        print("password should contain at least one or more lower case letters.")
-    elif not  special_chr:
-         print("password should contain at least one or more special characters.")
-    else:
-        print("Strong password")           
+    # Display strong password message
+    if strong_password_condition:
+        print("Strong password!")
+        break
+       
+
+    
+    
+
+     
     
