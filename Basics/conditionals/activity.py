@@ -8,7 +8,7 @@
 # input for the day
 
 # matches the day check from the dictionary
-database = {"monday": activity{}}
+database = {"monday": "Going to School."}
 print(database)
 # generates a random activity for each day.
 # prints out the output.
